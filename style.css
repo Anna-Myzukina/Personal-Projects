@@ -1,0 +1,360 @@
+/*=====[[ BASE ]]=====*/
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+/*=====[[ LAYOUT ]]=====*/
+
+.main-container {
+    background-color: #ECEEF1;
+}
+
+.accountContainer-item {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+}
+
+/*=====[[ TOPOGRAPHY ]]=====*/
+
+.paragraph-xxs {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 200;
+}
+
+.paragraph-xs {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.paragraph-sm {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.title-md {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+}
+
+
+/*=====[[ UTILITARY ]]=====*/
+
+.uBox-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.uBox-flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.uBox-flexColumn.centered {
+    align-items: center;
+    justify-content: center;
+}
+
+.uMargin-bottom-sm {
+ margin-bottom: 1rem;
+}
+
+.uMargin-none {
+    margin: 0;
+}
+
+.uText-center {
+    text-align: center;
+}
+
+/*=====[[ COMPOSANT ]]=====*/
+
+.cBtn {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.3rem 1.1rem 0.3rem 1.1rem;
+    border: 1px solid transparent;
+    border-style: inset;
+    border-image: initial;
+    border-radius: 4px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.cBtn-blue {
+    background-color: #127BCB;
+    color: #ffffff;
+}
+
+.cLink {
+    color: #127BCB;
+    text-decoration: none;
+}
+
+.cLink.black {
+    color: #000000!important;
+}
+
+.cLink:hover {
+    text-decoration: underline;
+}
+
+.cForm-group {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+.cForm-labelBox {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.cForm-label {
+    
+}
+
+.cForm-input {
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    width: 320px;
+    min-width: 160px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+/*Image responsive --> <"img"> */
+.imgResponsive {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/*=====[[ ACCOUNT CONNEXION ]]=====*/
+
+.accountConnexion {
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.accountConnexion-item {
+    padding-left: 0.5rem;
+    color: #4C4C4C;
+}
+
+.accountConnexion-btn {
+    border: 1px solid #4c4c4c;
+}
+
+.accountConnexion-btn::before {
+    content: url(../img/cadenas.svg);
+    width: 1rem;
+}
+
+/*=====[[ ACCOUNT LOGO ]]=====*/
+
+.accountLogo {
+    align-items: center;
+}
+
+.logoImg {
+    background-image: url(../img/ecosystem_logos_new.png);
+    height: 35px;
+    width: 118px;
+    display: block;
+    animation: 733ms fade-in ease-in forwards;    
+}
+
+.mint-animation {
+    background-image: url(../img/mint-logo.png);
+    
+}
+
+.subLogo {
+    display: block;
+    height: 23px;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.subLogo-img {
+    width: 23px;
+}
+
+.mint-img {
+    background-image: url(../img/mint-logo.png);
+    left: 142px;
+    position: relative;
+    animation: slide-left 1.1s cubic-bezier(.7, 0, 0, 1) forwards, 1.4s zoom ease-in-out forwards;
+}
+
+.mint-text {
+    background-image: url(../img/mint-text.png);
+    width: 38px;
+    left: 142px;
+    position: relative;
+    animation: slide-left 1.1s cubic-bezier(.7,0,0,1) forwards, fade-in 667ms ease-in 533ms forwards;
+    opacity: 0;
+}
+
+.quickbooks-img {
+    background-image: url(../img/quickbooks-logo.png);
+    left: 142px;
+    position: relative;
+    animation: slide-left 1.1s cubic-bezier(.2,0,.5,1) .1s forwards, fade-in 667ms ease-in 533ms forwards, 1.4s zoom ease-in-out forwards;
+    opacity: 0;
+}
+
+.quickbooks-text {
+    background-image: url(../img/quickbooks-text.png);
+    left: 142px;
+    position: relative;
+    width: 99px;
+    animation: slide-left 1.1s cubic-bezier(.2,0,.5,1) .1s forwards, fade-in .5s ease-in 733ms forwards;
+    opacity: 0;
+}
+
+.turbotax-img {
+    background-image: url(../img/turbotax-logo.png);
+    left: 142px;
+    position: relative;
+    animation: slide-left 867ms cubic-bezier(.5,0,.25,1) 433ms forwards, fade-in 467ms ease-in 833ms forwards, 1.4s zoom ease-in-out forwards;
+    opacity: 0;
+}
+
+.turbotax-text {
+    background-image: url(../img/turbotax-text.png);
+    left: 142px;
+    position: relative;
+    width: 72px;
+    animation: slide-left 867ms cubic-bezier(.5,0,.25,1) 433ms forwards, fade-in 433ms ease-in 867ms forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        left: 142px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes zoom {
+    0%, 100% {
+        transform: scale(1,1);
+    }
+
+    50% {
+        transform: scale(2, 2);
+    }
+}
+
+/*=====[[ ACCOUNT INSCRIPTION ]]=====*/
+
+.accountInscription {
+    width: 380px;
+    background-color: #FFFFFF;
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+    padding: 1.875rem;
+    box-sizing: border-box;
+}
+
+.accountContainer-titleBox {
+    color: #4C4C4C;
+}
+
+.subText-input {
+    font-weight: 400!important;
+}
+
+.passwordInput-img {
+    width: 1.2rem;
+    position: absolute;
+    top: 2.6rem;
+    right: 0.125rem;
+}
+
+.createAccount-btn {
+    width: 100%;
+    border: #0077C5;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.1rem 0.5rem 1.1rem;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .75);
+    margin-top: 0.675rem;
+}
+
+.createAccount-btn::before {
+    content: url(../img/cadenas.svg);
+    width: 1rem;
+}
+
+.accountInscription-endText {
+    font-style: italic;
+    color: #bbb;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.accountInscription-footer {
+    color: #8d9096;
+    background-color: #ECEEF1;
+    padding: 1rem;
+    margin: 0 -1.9rem -1.9rem -1.875rem;
+    font-weight: 300;
+}
+
+/*=====[[ ACCOUNT FOOTER ]]=====*/
+
+.accountFooter{
+    padding-top: 0.4rem;
+}
+
+.accountFooter-link {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+@media screen and (max-width: 400px) {
+    .subLogo-img {
+        margin-bottom: 1rem;
+    }
+
+    .accountInscription {
+        width: 100%;
+        border: none;
+    }
+
+    .cForm-input {
+        width: 100%;
+    }
+
+    .subLogo-Box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .createAccount-btn {
+        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+    }
+}

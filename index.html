@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Réplique formulaire Mint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:200,300,400" rel="stylesheet">
+</head>
+<body>
+    <main class="main-container accountContainer">
+        <div class="accountContainer-item">
+            <header class="accountConnexion uBox-flex">
+                <div class="accountConnexion-item">
+                    <p class="paragraph-xs uMargin-none">
+                        Already have an Intuit account?
+                    </p>
+                    <p class="paragraph-xs uMargin-none">
+                        <a class="cLink" href="#">
+                            I forgot my User ID or Password
+                        </a>
+                    </p>
+                </div>
+                <div class="accountConnexion-item">
+                    <button class="cBtn cBtn-blue accountConnexion-btn">
+                        Sign In
+                    </button>
+                </div>
+            </header>
+        </div>
+        <div class="accountContainer-item">
+            <div class="accountLogo uBox-flexColumn">
+                <div class="uMargin-bottom-sm">
+                    <a class="logoImg" href="#"></a>
+                </div>
+                <div class="uBox-flex subLogo-Box">
+                    <div class="uBox-flex">
+                        <div>
+                            <a class="subLogo subLogo-img mint-img" href="#"></a>
+                        </div>
+                        <div>
+                            <a class="subLogo mint-text" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="uBox-flex">
+                        <div>
+                            <a class="subLogo subLogo-img quickbooks-img" href="#"></a>
+                        </div>
+                        <div>
+                            <a class="subLogo quickbooks-text" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="uBox-flex">
+                        <div>
+                            <a class="subLogo subLogo-img turbotax-img" href="#"></a>
+                        </div>
+                        <div>
+                            <a class="subLogo turbotax-text" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accountContainer-item uBox-flexColumn centered">
+            <div class="accountInscription">
+                <div class="uBox-flexColumn centered accountContainer-titleBox uMargin-bottom-sm">
+                    <div class="uText-center uMargin-bottom-sm">
+                        <h1 class="title-md uMargin-none">
+                            One Account.<br/>
+                            Everything Intuit.
+                        </h1>
+                    </div>
+                    <div class="uBox-flex uText-center">
+                        <p class="paragraph-sm uMargin-none">
+                            Create an account for all of Intuit's products including Mint.
+                            <a class="paragraph-xs cLink" href="#">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+                <form class="uBox-flexColumn centered uMargin-bottom-sm" action="GET">
+                    <div class="cForm-group">
+                        <div class="cForm-labelBox">
+                            <label class="cForm-label paragraph-sm" for="email">Email address</label>
+                        </div>
+                        <div>
+                            <input class="cForm-input paragraph-sm" type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="cForm-group">
+                        <div class="cForm-labelBox">
+                            <label class="cForm-label paragraph-sm" for="phone">Phone (recommended)</label>
+                        </div>
+                        <div>
+                            <input class="cForm-input paragraph-sm" type="tel" name="phone" id="phone" required>
+                            <p class="subText-input paragraph-xxs uMargin-none">Standard call, messaging or data rates may apply.</p>
+                        </div>
+                    </div>
+                    <div class="cForm-group">
+                        <div class="cForm-labelBox">
+                            <label class="cForm-label paragraph-sm" for="password">Password</label>
+                        </div>
+                        <div>
+                            <input class="cForm-input paragraph-sm" type="password" name="password" id="password" required>
+                            <span class="passwordInput-img">
+                                <img class="imgResponsive" src="img/unlock.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cForm-group">
+                        <button class="cBtn cBtn-blue paragraph-sm createAccount-btn">
+                            Create Account
+                        </button>
+                    </div>
+                </form>
+                <div class="uText-center accountInscription-endText uMargin-bottom-sm">
+                    <p class="paragraph-xs">
+                        By clicking Create Account, you agree to our <a class="cLink" href="#">License Agreement</a> and have read and acknowledge our <a class="cLink" href="">Privacy Statement</a>.
+                    </p>
+                </div>
+                <div class="uText-center accountInscription-footer">
+                    <p class="paragraph-xxs">
+                        Invisible reCAPTCHA by Google <a class="cLink" href="">Privacy Policy</a> and <a class="cLink" href="">Terms of Use</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accountContainer-item">
+            <footer class="accountFooter uBox-flexColumn centered uMargin-bottom-sm">
+                <p class="uMargin-none uText-center paragraph-xs">
+                    <a class="cLink black accountFooter-link" href="#">Legal</a>
+                    <a class="cLink black accountFooter-link" href="#">Privacy</a>
+                    <a class="cLink black accountFooter-link" href="#">Security</a>
+                </p>
+                <p class="uMargin-none uText-center paragraph-xs">
+                    © 2018 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
+                </p>
+                <p class="uMargin-none uText-center paragraph-xs">
+                    Terms and conditions, features, support, pricing, and service options subject to change without notice.
+                </p>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
